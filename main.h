@@ -6,9 +6,9 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
+#include <limits.h>
 
-/** PROTOTYPES **/
-int _putchar(char c);
+/** prototypes **/
 int _printf(const char *format, ...);
 int print_char(va_list args);
 int print_string(va_list args);

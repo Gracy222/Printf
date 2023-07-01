@@ -28,6 +28,11 @@ int print_integer(va_list args)
 		write(1, "0", 1); /* Print a single '0' digit if the number is zero */
 		digit_count++; /* Increment the digit count to account for the '0' digit */
 	}
+	else if (number == INT_MIN)
+	{
+		write(1, "2147483648", 11);
+		return (11);
+	}
 
 	while (number > 0)
 	{
